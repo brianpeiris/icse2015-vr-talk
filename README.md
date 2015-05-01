@@ -56,3 +56,17 @@ Finally, we consider feedback in VR. Although live-coding has existed in 2D soft
     - Debug window
     - Leap motion integraiton
     - Flocking algorithm
+
+# Open Questions
+There are still some big questions that would benefit from research.
+
+## Degrees of Immersion
+It is easy to imagine VR helping with 3D software. Could VR be helpful when building software that lacks a 3D analog?  Would augmented reality be more helpful?
+
+## Input forms
+How can software engineers immersed in a virtual environment instruct the computer on what to do?  Voice? Gestures? Text?
+
+# Future work
+* more powerful 3D editor
+* as needed info visualizations
+* 3D visual programming languages
