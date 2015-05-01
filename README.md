@@ -1,5 +1,7 @@
 ICSE Talk
-- Intro to VR and new generation of VR.
+- What is VR?
+- Why use VR with Software Engineering?
+- History of VR and why now is better
 - Affordances
     - Spatial Cognition
     - Manipulation and Motion
@@ -8,6 +10,8 @@ ICSE Talk
     - Debug window
     - Leap motion integraiton
     - Flocking algorithm
+- Open questions (cut if needed)
+- Future work
 
 
 # What is VR?
