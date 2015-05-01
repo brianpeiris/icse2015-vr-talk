@@ -10,6 +10,23 @@ ICSE Talk
     - Flocking algorithm
 
 
+# What is VR?
+There are many definitions of virtual reality, but we will use a casual definition that virtual reality is a combination of innate human abilities and the malleability provided by digital technology.
+
+Humans are amazing creatures with all sorts of amazing abilities.  However, current programming environments only take advantage of a few of these abilities.  We have built VR prototypes that take more fully take advantage of the innate human abilities of spatial cognition, manipulation and motion, and feedback.
+
+# Why use VR with SE?
+VR enables more natural programming solutions. 
+
+## More familiar
+These solutions can be more familiar to users than traditional solutions which we expect would increase task speed and decrease cognitive load (ex: looking around in 3D via head vs. mouse). 
+
+## New techniques
+These solutions could also enable techniques that have been previously impossible. For example, VR enables video game developers to be *inside* their game while creating it.
+
+
+------
+
 # Intro, VR history and future
 
 Our research paper describes the application of Virtual Reality to Software Engineering but, before we dive into the paper's specifics, we'd like to give you a primer on the history and future of Virtual Reality.
