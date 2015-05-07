@@ -8,13 +8,17 @@
             @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
             @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
 
-            body { font-family: 'Droid Serif'; }
+            body {
+              font-family: 'Droid Serif';
+            }
             h1, h2, h3 {
                 font-family: 'Yanone Kaffeesatz';
                 font-weight: normal;
             }
             .red { color: red }
             .large { font-size: 2em }
+            .small { font-size: 0.75em}
+            .topPadding { padding-top: 1em }
             .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
         </style>
     </head>
@@ -158,21 +162,25 @@ Today several major companies are involved in VR including Facebook, Google, Mic
 
 ---
 
-template: ppp
+name: affordances
 
 # Affordances
+
+---
+template: affordances
+
+.topPadding[- Spatial cognition]
+.topPadding[- Manipulation and motion]
+.topPadding[- Feedback]
 
 ???
 
 In that vein, our research suggests several affordances that VR can provide to software engineering and provides rudimentary examples of how they might be implemented.
 
 ---
+# Affordances - .small[Spatial Cognition]
 
-template: ppp
-
-Spatial Cognition
-
-![Data Mountain](images/data-mountain.jpg)
+.center[<img src="images/data-mountain.jpg" width="90%">]
 
 ???
 
@@ -180,11 +188,9 @@ The first affordance we considered was spatial cognition. Unlike any other compu
 
 ---
 
-template: ppp
+# Affordances - .small[Manipulation and Motion]
 
-Manipulation and Motion
-
-![Cyberith](images/cyberith.jpg)
+.center[<img src="images/cyberith.jpg" width="50%">]
 
 ???
 
@@ -192,9 +198,7 @@ The second affordance, manipulation and motion, speaks about using VR perhiperal
 
 ---
 
-template: ppp
-
-Feedback
+# Affordances - .small[Feedback]
 
 ???
 
@@ -208,8 +212,6 @@ Finally, we consider feedback in VR. Although live-coding has existed in 2D soft
     - Flocking algorithm
 
 ---
-
-template: ppp
 
 Recap
 
