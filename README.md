@@ -1,5 +1,7 @@
 ICSE Talk
-- Intro to VR and new generation of VR.
+- What is VR?
+- Why use VR with Software Engineering?
+- History of VR and why now is better
 - Affordances
     - Spatial Cognition
     - Manipulation and Motion
@@ -8,16 +10,34 @@ ICSE Talk
     - Debug window
     - Leap motion integraiton
     - Flocking algorithm
+- Open questions (cut if needed)
+- Future work
 
 
-# Intro, VR history and future
+# What is VR?
+There are many definitions of virtual reality, but we will use a casual definition that virtual reality is a combination of innate human abilities and the malleability provided by digital technology.
 
-Our research paper describes the application of Virtual Reality to Software Engineering but, before we dive into the paper's specifics, we'd like to give you a primer on the history and future of Virtual Reality.
+Humans are amazing creatures with all sorts of amazing abilities.  However, current programming environments only take advantage of a few of these abilities.  We have built VR prototypes that take more fully take advantage of the innate human abilities of spatial cognition, manipulation and motion, and feedback.
 
-Most people probably know virtual reality from science fiction, where been a staple since the 1930s, not coincidentally around the dawn of television. The most popular fictional incarnations in William Gibson's Neuromancer in 1984 and Neal Stephenson's Snow Crash in 1992 and movies like the Matrix trilogy. In real-life though, VR enjoyed a golden age from the 1970s to the 1990s.  Despite the limitations in hardware , with rudimentary computing and graphical power, heavy CRT displays and low-resolution LCDs, VR research boomed with new ideas and thousands of papers.
+# Why use VR with SE?
+VR enables more natural programming solutions. 
 
-However, the hardware of the time ultimately failed to meet the expectations and mainstream consumer adoption was simply not viable. Virtual reality was once again relagated to science fiction, game arcades and a handful of VR labs in institutions that could afford it. A movie called "The Lawnmower Man" was a symbolic nail in VR's coffin. Released in 1992 and starring Pierce Brosnan as a scientist who used VR to enhance the mental powers of an unsuspecting gardener who then goes on to exact revenge with this superhuman abilities before uploading himself into the world's telecommunications grid.  It was terrible. The public gave up on the idea of mainstream VR and researchers and developers returned to more practical work.
+## More familiar
+These solutions can be more familiar to users than traditional solutions which we expect would increase task speed and decrease cognitive load (ex: looking around in 3D via head vs. mouse). 
 
+## New techniques
+These solutions could also enable techniques that have been previously impossible. For example, VR enables video game developers to be *inside* their game while creating it.
+
+
+# Why now?
+
+## History
+VR enjoyed a golden age from the 1970s to the 1990s.  Despite the limitations in hardware , with rudimentary computing and graphical power, heavy CRT displays and low-resolution LCDs, VR research boomed with new ideas and thousands of papers.
+
+### Hardware limitations
+However, the hardware of the time ultimately failed to meet the expectations and mainstream consumer adoption was simply not viable. Virtual reality was relagated to science fiction, game arcades and a handful of VR labs in institutions that could afford it. 
+
+## 2012: Commodity hardware
 Fast forward about 15 years and VR is back with a vengeance. While most large companies had given up on VR, in 2012 a teenager named Palmer Luckey was busy building duck-taped head-mounted displays. Luckey exploited the mobile phone hardware and graphics processing that all of us now take for granted and he built a device with commodity displays and commodity gyroscope and accelerometor sensors and combined that with a simple GPU effect to undo the distortion introduced by a simple lens. With that, he set into motion a series of events that attracted programming legend John Carmack, games behemoth Valve and formed a company which debuted with a kickstarter campaign that raised 2.4 million dollars, got acquired by Facebook for 2 billion and resurrected the VR industry.
 
 This new generation of VR devices provide an unparalleled experience at accessible prices. A combination of factors, including display resolution, sensor and display frequency, field of view, and latency, have been refined and continue to be improved in order to achieve that elusive goal of presence. When done right, VR can give users the undeniable sense of inhabiting the virtual world that they're presented with. Almost all the sensory queues that your brain uses are fooled into thinking that the virtual world is indeed the truth.
@@ -40,3 +60,17 @@ Finally, we consider feedback in VR. Although live-coding has existed in 2D soft
     - Debug window
     - Leap motion integraiton
     - Flocking algorithm
+
+# Open Questions
+There are still some big questions that would benefit from research.
+
+## Degrees of Immersion
+It is easy to imagine VR helping with 3D software. Could VR be helpful when building software that lacks a 3D analog?  Would augmented reality be more helpful?
+
+## Input forms
+How can software engineers immersed in a virtual environment instruct the computer on what to do?  Voice? Gestures? Text?
+
+# Future work
+* more powerful 3D editor
+* as needed info visualizations
+* 3D visual programming languages
