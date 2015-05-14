@@ -28,6 +28,26 @@
             .floatRight {
               float: right;
             }
+            .rightColumn {
+              float: right;
+              width: 50%;
+              padding-top: 1em;
+              height: 92%;
+            }
+            .leftColumn {
+              float: left;
+              width: 45%;
+            }
+            .topMargin {
+              margin-top: 3em;
+            }
+            .bottom {
+              position: absolute;
+              bottom: 3em;
+            }
+            .imageRow {
+              display: inline-block;
+            }
             .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
         </style>
     </head>
@@ -55,10 +75,23 @@ name: ppp
 
 # VR: Past, Present, Future
 
-- first VR display in the 1960's
-- VR boom in the 80's
-- Hardware became cheaper
-- Who's involved right now in VR?
+.leftColumn[
+<img src="images/sutherland-hmd.jpg" width="50%"> <br>
+__1965__
+]
+
+.rightColumn[
+<img src="images/rift.jpg" width="100%"> <br>
+__2012__
+]
+
+.bottom[
+<img src="images/facebook.png" width="10%">
+<img src="images/microsoft.jpg" width="30%">
+<img src="images/google.png" width="25%">
+<img src="images/sony.jpg" width="25%">
+]
+
 
 ???
 Maybe add slide for just the companies in VR right now.
@@ -92,9 +125,13 @@ name: improves
 ---
 # VR improves on - Spatial Cognition
 
+<img src="images/data-mountain.jpg" align="right">
+
 ### VR provides:
 - stereoscopic vision -> depth
 - head rotation
+
+
 
 --
 
@@ -104,27 +141,51 @@ name: improves
 
 ---
 # VR improves on - Manipulation and motion
+
+.leftColumn[
 ### VR provides:
 - direct manipulation
 - walking
+]
+
+.rightColumn[
+<img src="images/hand-large.png" width="100%"><br>
+<img src="images/cyberith.jpg" width="50%">
+]
 
 ???
 Visuals
 - hand in scene
 - Cyberith
 
---
+---
+
+# VR improves on - Manipulation and motion
+
+.leftColumn[
+### VR provides:
+- direct manipulation
+- walking
 
 ### Effect
 - improve perception and retention (Noyes, 2008)
 - Walking stimulates creativity (Oppezzo, 2014)
 - improves sensation of depth (Held, 1963)
+]
+
+.rightColumn[
+<img src="images/hand-large.png" width="100%"><br>
+<img src="images/cyberith.jpg" width="50%">
+]
 
 ---
 # VR improves on - Feedback
 ### VR provides:
 - Overcoming the *Gulf of Evaluation* (Norman, 1988)
 - VR makes it easier to see what's going on
+
+<img src="images/feedback-loop.png" width="60%" align="right">
+
 
 --
 
@@ -135,28 +196,54 @@ Visuals
 ---
 # How can VR help developers?
 
+.leftColumn[
 - Code review
 - Debugging
 - Simulation
 - Visualizations
+]
+
+.rightColumn[
+<img src="images/immersion.png" width="95%"> <br><br>
+<img src="images/debugger-canvas.png" width="95%">
+]
 
 ---
-# How can you help - researchers
+# How researchers can help
 
 ???
 There are still some big questions that would benefit from research.
 
 --
 
-- Immersive visual programming language
+.leftColumn[
+<br>
+1) Immersive visual programming language
+
+]
+
+.rightColumn[
+<img src="images/scratch.jpg" width="95%">
+]
 
 ???
 Like Scratch
 - education
 
---
+---
 
-- VR vs AR
+# How researchers can help
+
+.leftColumn[
+1) Immersive visual programming language
+.bottom[
+2) Immersion vs physical interaction
+]]
+
+.rightColumn[
+<img src="images/scratch.jpg" width="95%">
+<img src="images/hololens.jpg" width="95%">
+]
 
 ???
 How can software engineers immersed in a virtual environment instruct the computer on what to do?
@@ -176,15 +263,23 @@ Visuals
 
 # Recap
 
+.leftColumn[
+- commodity hardware
 - programming is hard
 - VR can improve
   - Spatial cognition
   - Manipulation and motion
   - Feedback
-- commodity hardware
+]
 
-  .footnote[Poster on Thursday from 4-5:30 pm]
+.rightColumn[
+<img src="images/riftsketch.png" width="95%">
 
+]
+
+.bottom[
+Poster: Thursday 4 - 5:30 pm
+]
 ???
 
         </textarea>
