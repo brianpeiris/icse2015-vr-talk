@@ -2,16 +2,16 @@
 
 - A brief history of VR
 - Demo without VR
+- Demo with VR
 - What is VR?
 - Why use VR with Software Engineering?
 - Affordances
     - Spatial Cognition
     - Manipulation and Motion
     - Feedback
-- RiftSketch
-    - Debug window
-    - Leap motion integraiton
-    - Flocking algorithm
+- Dev Benefits
+- Persuade Researchers
+- Resources
 - Open questions (cut if needed)
 - Future work
 
@@ -22,6 +22,30 @@ Virtual reality has been a staple of science fiction for decades but, from the n
 That is until two thousand twelve, when a kid in a garage took advantage of mobile phone hardware and reignited a new generation of VR. A rapid series of events lead the formation of a company and to a kickstarter campaign that raised 2.4 million dollars. Only a couple of years later, the company was bought by Facebook for 2 billion dollars. Today VR is spreading in the entertainment and computing industries. Giants like Google, Microsoft, Samsung and HTC, amongst others, are making moves into VR. And the first consumer devices are scheduled to hit shelves around the end of this year.
 
 ## Demo without VR
+
+To give you an example of the types of problems we think VR can address, we've arranged a short demo. Obviously, this is slightly contrived but we hope you can relate it some of it at least. We'll start with a typical development environment. Web devs will recognize this setup, with your favorite editor side-by-side with a browser. In this case the code we're working on implements a simple 3D application that includes a flocking algorithm with a few JavaScript files.
+
+The first thing we'd like to point out is file management. Most editors have moved towards tab-based interfaces, which is certainly helpful, but dealing with multiple files in can still slow you down. At best you might be able to spread your files across a few screens. Anyway, lets move on to the actual application.
+
+The code constructs a 3D world containing boids which behave according to a flocking algorithm. Lets edit the code a bit to generate more of these boids. As soon as we do that, we run into the second problem we'd like to solve. This one is particular to 3D applications but it is quite a serious problem. As you can see, it is difficult to tell these boids apart, despite their contrasting colors, without manually rotating your point of view.
+
+Now let's take a look at this flocking algorithm. It's got a bug in it that we'd like to fix. The code has a few magic numbers that we may have to tweak. One of them controls the interpolation between two quaternions during the separation step of the algorithm. We can keep editing this number to find the right balance but let's turn to VR and see if there's a better way.
+
+Before we do that though, one last thing we want to point out is that the traditional development process involves this tedious edit, switch and refresh cycle. Maybe we can solve that in VR as well.
+
+## Demo with VR
+
+The first thing you'll notice in the VR version of this demo is that we are no longer just looking at the demo application from the outside but that we are actually inhabiting the world itself. [Look around the world] To our right, our JavaScript files appear in free-floating editors. [Look at the editors]
+
+Thanks to hand-tracking provided by the Leap Motion sensor, we can use our hands in VR and grab the editors and position them as we choose in this 360 degree virtual screen space. [Grab one of the editors and move it around a bit] Since we're not interested in the World and Boid files right now, we can just move them out of the way. [Move the two editors behind]
+
+Secondly, we can perceive the depth of 3D objects in our application, this makes it much easier to understand what we're looking at. [Look back at boids, shift around to show parallax] We can even position ourselves at an ideal vantage point as needed. [Step a few paces around the boids]
+
+Let's try to fix that bug we were looking at. Using a gesture, we can tweak the number directly in the code and immediately see the effects of our changes. [Scrub the number and show it change while also looking at the boid react]
+
+We can even use this virtual workspace to inspect properties of the 3D objects in context. [Create a watch window on two of the boids to watch its behaviour variables change].
+
+Let's expand on this code for a bit longer to give you an idea of what it feels like to code in this environment. [Makes the boids actually move around and add a behaviour for them to return back to origin]
 
 ## What is VR?
 There are many definitions of virtual reality, but we will use a casual definition that virtual reality is a combination of innate human abilities and the malleability provided by digital technology.
@@ -47,12 +71,17 @@ The second affordance, manipulation and motion, speaks about using VR perhiperal
 
 Finally, we consider feedback in VR. Although live-coding has existed in 2D software systems for decades, real-time feedback is especially effective in VR when your software has a visual 3D analog. Allowing developers to experience and edit the software and the world around them in a short cycle can improve productivity, experimentation and learning.
 
-## Demo
+## Dev Benefits
 
-- RiftSketch
-    - Debug window
-    - Leap motion integraiton
-    - Flocking algorithm
+We've considered a few other benefits that VR could provide to developers. The first screenshot here shows a prototype of a code review tool. This tool gives you the best of both worlds, the physical and the virtual. So you could search for a piece of code in your codebase, just like you would with any digital text, but you'd also be able to pin that it up to the space in front of you or throw it down into piles below you depending on how relevant they were to the code that you're reviewing.
+
+The second screenshot shows an existing 2D tool which lets you visualize the flow of a program through methods and the callstack as you debug it. Similar tool in VR that takes advantage of an unlimited 3D space and surrounds you, instead of one that only gives you a small window into the visualization, so that you could always have that spatial context.
+
+VR would also be extremely useful when combined with simulation software. Imagine you were a developer for Boeing, working on avionics software for their next line of aircraft. You could debug your code in a virtual simulation with a miniature 3D model of the aircraft in the palm of your hand. As your code runs, you could watch the visualization of the software's commands propagate through the aircraft's control circuits. Then could blow the aircraft up to larger than life-size and walk into the guts of the wing's flight surface mechanism and watch behavior of the hydraulic actuators.
+
+## Persuade Researchers
+
+## Resources
 
 ## Open Questions
 There are still some big questions that would benefit from research.
