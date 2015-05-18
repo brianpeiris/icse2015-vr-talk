@@ -35,10 +35,10 @@ Now let's take a look at this flocking algorithm.  It seems to have a bug in it 
 ## Demo with VR
 
 - inside world
+    - depth
+    - position self
 - editors in world
-- move editors
-- depth
-- position self
+    - move editors
 - fix bug: gestures to change number
 - returnToOrigin
 
