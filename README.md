@@ -23,9 +23,9 @@ That is until two thousand twelve, when a kid in a garage took advantage of mobi
 
 ## Demo without VR
 
-To give you an example of the types of problems we think VR can address, we've arranged a short demo. Obviously, this is slightly contrived but we hope you can relate it some of it at least. We'll start with a typical development environment. Web devs will recognize this setup, with your favorite editor side-by-side with a browser. In this case the code we're working on implements a simple 3D application that includes a flocking algorithm with a few JavaScript files.
+So, given the rise of this new generation of VR, we wanted to show you an example of the types of problems we think VR can address. To that end, we've arranged a demo. And although it may be somewhat contrived, hopefully it gives you an idea of what we're talking about. We'll start with a typical development environment. Web devs will recognize this setup, with your favorite editor side-by-side with a browser. In this case the code we're working on implements a simple 3D application, written in JavaScript, that includes a flocking algorithm.
 
-The first thing we'd like to point out is file management. Most editors have moved towards tab-based interfaces, which is certainly helpful, but dealing with multiple files in can still slow you down. At best you might be able to spread your files across a few screens. Anyway, lets move on to the actual application.
+The first thing we'd like to point out is the problem of file management. Most editors have moved towards tab-based interfaces, which is certainly helpful, but dealing with multiple files in can still slow you down. At best you might be able to spread your files across a few screens. Anyway, lets move on to the actual application.
 
 The code constructs a 3D world containing boids which behave according to a flocking algorithm. Lets edit the code a bit to generate more of these boids. As soon as we do that, we run into the second problem we'd like to solve. This one is particular to 3D applications but it is quite a serious problem. As you can see, it is difficult to tell these boids apart, despite their contrasting colors, without manually rotating your point of view.
 
