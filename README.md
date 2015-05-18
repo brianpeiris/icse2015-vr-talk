@@ -35,6 +35,14 @@ Before we do that though, one last thing we want to point out is that the tradit
 
 ## Demo with VR
 
+- inside world
+- editors in world
+- move editors
+- depth
+- position self
+- fix bug: gestures to change number
+- returnToOrigin
+
 The first thing you'll notice in the VR version of this demo is that we are no longer just looking at the demo application from the outside but that we are actually inhabiting the world itself. [Look around the world] To our right, our JavaScript files appear in free-floating editors. [Look at the editors]
 
 Thanks to hand-tracking provided by the Leap Motion sensor, we can use our hands in VR and grab the editors and position them as we choose in this 360 degree virtual screen space. [Grab one of the editors and move it around a bit] Since we're not interested in the World and Boid files right now, we can just move them out of the way. [Move the two editors behind]
