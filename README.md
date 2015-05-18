@@ -85,7 +85,14 @@ Lastly, we considered visualization applications. Even if the code you're workin
 
 ## Persuade Researchers
 
-## Resources
+## VR Resources
+If you were interested in developing for VR, here are some tools that might help.
+
+Since most of today's VR development is focused around games, one of most popular tools is the Unity game engine. Unity is free, easy to learn and already includes APIs for the Oculus Rift.
+
+Recently, Microsoft annonced that every version of Windows 10 will have HoloLens APIs by default. Although they've only just started to reveal their plans, HoloLens is an avenue for augmented reality development
+
+Finally, WebVR is a new set of browser APIs that are currently in development. These APIs give you access to orientation and position data for VR headsets, which allows you build VR applications for the browser in conjunction with WebGL. As you might have guessed, the VR demo we showed you was using WebVR in Google Chrome. The APIs have already appeared in the Nightly Firefox builds
 
 ## Open Questions
 There are still some big questions that would benefit from research.
