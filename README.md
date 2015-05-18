@@ -43,8 +43,6 @@ Secondly, we can perceive the depth of 3D objects in our application, this makes
 
 Let's try to fix that bug we were looking at. Using a gesture, we can tweak the number directly in the code and immediately see the effects of our changes. [Scrub the number and show it change while also looking at the boid react]
 
-We can even use this virtual workspace to inspect properties of the 3D objects in context. [Create a watch window on two of the boids to watch its behaviour variables change].
-
 Let's expand on this code for a bit longer to give you an idea of what it feels like to code in this environment. [Makes the boids actually move around and add a behaviour for them to return back to origin]
 
 ## What is VR?
