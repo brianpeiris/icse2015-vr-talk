@@ -28,7 +28,7 @@ We'll start with a typical development environment. Web devs will recognize this
 
 The first thing we'd like to point out straight away is the problem of file management. Most editors use tab-based interface, which is helpful, but dealing with multiple files can still be annoying. At best you might be able to spread your files across several displays but we think we can do better in VR.
 
-Lets move on to the actual application. The code here constructs a 3D world containing these colorful boids. Lets edit the code a bit to generate more of them. As soon as we do that, we run into the second problem we'd like to solve. As you can see,  despite their contrasting colors, it's difficult to tell these boids apart. We can manually rotate our point of view but even then, it's hard to judge their depth in 3D.
+Lets move on to the actual application. The code here constructs a 3D world containing these colorful boids that behave according to a flocking algorithm. Lets edit the code a bit to generate more of them. As soon as we do that, we run into the second problem we'd like to solve. As you can see,  despite their contrasting colors, it's difficult to tell these boids apart. We can manually rotate our point of view but even then, it's hard to judge their depth in 3D.
 
 Now let's take a look at this flocking algorithm.  It seems to have a bug in it that causes the boids to jitter about in the first half of the simulation. So, let's try to fix that. The code has a few magic numbers that we can tweak. One of them controls the separation between the boids during that stage of the behavior. I'm going to tweak that to see if we can get a nicer result.  That seems to have improved things. Now, we can keep changing this number to find the right balance but, it we have to go through this tedious cycle where you have to edit the code, switch to the brower, refresh the browser and then react to what you see. Maybe we can solve that in VR as well, so lets step in to virtual reality.
 
@@ -77,16 +77,22 @@ The second affordance, manipulation and motion, speaks about using VR perhiperal
 Finally, we consider feedback in VR. Although live-coding has existed in 2D software systems for decades, real-time feedback is especially effective in VR when your software has a visual 3D analog. Allowing developers to experience and edit the software and the world around them in a short cycle can improve productivity, experimentation and learning.
 
 ## Dev Benefits
+When it comes to VR helping developers, we've considered a few applications that might be built in the future. The screenshot here shows an existing tool called Debugger Canvas from Microsoft. The tool uses an infinite 2D canvas to visualize the flow of a program through methods and the callstack as you debug it. A similar tool in VR could take advantage of an unlimited 3D space where the visualization surrounds you, so that you could always have that spatial context.
 
-We've considered a few other benefits that VR could provide to developers. The first screenshot here shows a prototype of a code review tool. This tool gives you the best of both worlds, the physical and the virtual. So you could search for a piece of code in your codebase, just like you would with any digital text, but you'd also be able to pin that it up to the space in front of you or throw it down into piles below you depending on how relevant they were to the code that you're reviewing.
+VR would also be extremely useful when combined with simulation software. Imagine you were a developer for Boeing, working on avionics software for their next line of aircraft. You could debug your code in a virtual simulation with a miniature 3D model of the aircraft in the palm of your hand. As your code runs, you could watch the visualization of your software's commands propagate through the aircraft's control circuits. Then could blow the aircraft up to larger than life-size and walk into the guts of the wing's flight surface mechanism and watch behavior of the hydraulic actuators.
 
-The second screenshot shows an existing 2D tool which lets you visualize the flow of a program through methods and the callstack as you debug it. Similar tool in VR that takes advantage of an unlimited 3D space and surrounds you, instead of one that only gives you a small window into the visualization, so that you could always have that spatial context.
-
-VR would also be extremely useful when combined with simulation software. Imagine you were a developer for Boeing, working on avionics software for their next line of aircraft. You could debug your code in a virtual simulation with a miniature 3D model of the aircraft in the palm of your hand. As your code runs, you could watch the visualization of the software's commands propagate through the aircraft's control circuits. Then could blow the aircraft up to larger than life-size and walk into the guts of the wing's flight surface mechanism and watch behavior of the hydraulic actuators.
+Lastly, we considered visualization applications. Even if the code you're working on doesn't have a 3D analogue that could be viewed in VR, you'd still be able to visualize the code itself. Imagine being able to view a dependency tree in VR or a commit log where you'd be able to walk along the timeline of a changes to a file.
 
 ## Persuade Researchers
 
-## Resources
+## VR Resources
+If you were interested in developing for VR, here are some tools that might help.
+
+Since most of today's VR development is focused around games, one of most popular tools is the Unity game engine. Unity is free, easy to learn and already includes APIs for the Oculus Rift.
+
+Recently, Microsoft annonced that every version of Windows 10 will have HoloLens APIs by default. Although they've only just started to reveal their plans, HoloLens is an avenue for augmented reality development
+
+Finally, WebVR is a new set of browser APIs that are currently in development. These APIs give you access to orientation and position data for VR headsets, which allows you build VR applications for the browser in conjunction with WebGL. As you might have guessed, the VR demo we showed you was using WebVR in Google Chrome. The APIs have already appeared in the Nightly Firefox builds
 
 ## Open Questions
 There are still some big questions that would benefit from research.
